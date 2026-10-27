@@ -78,6 +78,8 @@ button { color: inherit; }
 .hero-copy { position: relative; z-index: 2; }
 .availability { display: flex; align-items: center; gap: 10px; margin: 0 0 25px; color: var(--cyan); font-size: 10px; font-weight: 700; letter-spacing: 1.65px; }
 .availability > span { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 14px var(--cyan); }
+.canva-hero { display: grid; min-height: calc(100vh - 76px); min-height: calc(100svh - 76px); place-items: center; padding: 28px clamp(16px, 4vw, 56px); border-bottom: 1px solid var(--line); }
+.canva-embed { display: block; width: min(100%, 1376px); height: clamp(440px, calc(100vh - 144px), 780px); height: clamp(440px, calc(100svh - 144px), 780px); border: 0; border-radius: 12px; background: var(--panel); box-shadow: var(--card-shadow); }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: "Space Grotesk", "DM Sans", sans-serif; }
 .hero h1 { margin: 0; font-size: clamp(54px, 6.3vw, 82px); font-weight: 600; letter-spacing: -5px; line-height: 0.99; }
@@ -247,6 +249,8 @@ h1, h2, h3 { font-family: "Space Grotesk", "DM Sans", sans-serif; }
   html { scroll-padding-top: 72px; }
   .section-wrap { width: calc(100% - 40px); }
   .topbar { height: 66px; padding-inline: 20px; }
+  .canva-hero { min-height: calc(100vh - 66px); min-height: calc(100svh - 66px); padding: 14px 10px; }
+  .canva-embed { height: clamp(420px, calc(100vh - 104px), 680px); height: clamp(420px, calc(100svh - 104px), 680px); border-radius: 8px; }
   .brand-name { display: none; }
   .nav-actions { gap: 9px; }
   .icon-button { width: 36px; height: 36px; }

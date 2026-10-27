@@ -140,53 +140,17 @@ function App() {
       </header>
 
       <main id="main">
-        <section className="hero section-wrap" id="top" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <motion.div
-              initial={reducedMotion ? false : { opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55 }}
-            >
-              <p className="availability"><span /> CSE STUDENT · SRM IST TRICHY</p>
-              <h1 id="hero-title">
-                Building ideas
-                <br />
-                into <span className="gradient-text">real things.</span>
-              </h1>
-              <p className="hero-role">{portfolio.role}</p>
-              <p className="hero-tagline">{portfolio.tagline}</p>
-              <div className="hero-actions">
-                <a className="button button-primary" href="#projects">
-                  View Projects <ArrowIcon />
-                </a>
-                <a className="button button-secondary" href={portfolio.resumeUrl}>
-                  Download Resume <ArrowIcon diagonal />
-                </a>
-              </div>
-              <div className="hero-social-proof">
-                <span className="tiny-avatar" aria-hidden="true">RK</span>
-                <span>Curious by nature. Always building.</span>
-              </div>
-            </motion.div>
-          </div>
-          <div className="hero-art" aria-hidden="true">
-            <div className="orbital orbital-one" />
-            <div className="orbital orbital-two" />
-            <div className="orbital orbital-three" />
-            <div className="hero-core">
-              <span className="core-code">&lt; / &gt;</span>
-              <span className="core-label">BUILD · LEARN · REPEAT</span>
-            </div>
-            <span className="float-chip chip-python">Python</span>
-            <span className="float-chip chip-ai">AI / ML</span>
-            <span className="float-chip chip-web">Web</span>
-            <span className="float-dot dot-one" />
-            <span className="float-dot dot-two" />
-          </div>
-          <a className="scroll-cue" href="#about">
-            <span className="scroll-line" /> SCROLL TO EXPLORE
-          </a>
-          <span className="hero-index" aria-hidden="true">01 / 05</span>
+        <section className="canva-hero" id="top" aria-label="Featured Canva portfolio design">
+          <iframe
+            className="canva-embed"
+            src="https://www.canva.com/design/DAHZJhE-fRQ/jtq1ZBAdsFFYEpY56MARfw/view?embed"
+            title="R Kasinadh portfolio design on Canva"
+            allowFullScreen
+          >
+            <a href="https://www.canva.com/design/DAHZJhE-fRQ/jtq1ZBAdsFFYEpY56MARfw/view">
+              View the portfolio design on Canva
+            </a>
+          </iframe>
         </section>
 
         <section className="section-wrap content-section about-section" id="about">
